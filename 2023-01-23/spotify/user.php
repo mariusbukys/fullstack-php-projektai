@@ -17,7 +17,7 @@
                if($item === $artist['id']){
                 $name = $artist['name'];
                 $author = $artist['author'];
-                $query = "INSERT INTO playlist (name,user_id,songs) VALUES ('$name', '$user', '$author')";
+                $query = "INSERT INTO playlist (name,user_id,author) VALUES ('$name', '$user', '$author')";
                 $database->query($query);
                }
 
@@ -66,7 +66,7 @@ if(isset($_GET['action']) AND $_GET['action'] === 'delete'){
         <tr>
             <td><?=$track['id'] ?></td>
             <td><?=$track['name'] ?></td>
-            <td><?=$track['songs'] ?></td>
+            <td><?=$track['author'] ?></td>
             <td><a href="?page=user&action=delete&id=<?=$track['id'] ?>" class="text-warning-emphasis"><i class="bi bi-trash"></i></a></td>
         </tr>
         <?php endif ?>
