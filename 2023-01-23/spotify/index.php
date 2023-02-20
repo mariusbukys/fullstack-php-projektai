@@ -24,9 +24,11 @@ try{
   <div class="container text-center">
   <h1 class="fw-bold fst-italic mt-5 display-1 text-success-emphasis"><i class="bi bi-tsunami"></i></i> Sound<span class="text-warning-emphasis">Wave</span></h1>
    <?php if(isset($_GET['message'])) : ?>
-  <div class="alert alert-<?=$_GET['status']?>">
+    <div class="d-flex justify-content-center">
+  <div class=" w-50 alert alert-<?=$_GET['status']?>">
     <?= $_GET['message'] ?>
   </div>
+   </div>
   <?php endif; ?>
 
     <?php
