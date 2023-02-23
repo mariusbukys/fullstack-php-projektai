@@ -159,11 +159,11 @@ unset($data[1]);
                     }
                 ?>
                     <tr class="text-black bg-body-secondary p-3">
-                        <td class="text-black fw-bold">
+                        <td class="text-success fw-bold">
                             <i class="bi fs-4 bi-<?= $icon ?>"></i>
                             <?php 
                                 if(is_dir($path)) {
-                                    echo '<a class="text-uppercase text-black text-decoration-none" href="?dir=' . $path . '">' . $item . '</a>';
+                                    echo '<a class="text-uppercase text-warning-emphasis text-decoration-none" href="?dir=' . $path . '">' . $item . '</a>';
                                 } else {
                                     echo '<a class="text-dark-emphasis text-decoration-none" href="'.$path.'" target="_blank">' . $item . '</a>';
                                 }
